@@ -1,0 +1,43 @@
+/* #empty,
+#list {
+    display: none;
+} */
+
+#add {
+    width: 62px;
+    height: 62px;
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+    border-radius: 50%;
+}
+
+header {
+    align-items: center;
+    background: cornflowerblue;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    font-weight: 600;
+    justify-content: center;
+    height: 85px;
+}
+
+#empty {
+    text-align: center;
+    padding: 70px ;
+}
+
+.empty__title {
+   font-size: 25px;
+   font-weight: 600;
+}
+
+.empty__icon {
+    font-size: 150px;
+}
+
+.list__title {
+    font-size: 25px;
+    font-weight: 600;
+}
