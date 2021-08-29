@@ -1,15 +1,17 @@
-/* #empty,
+#detail,
 #list {
     display: none;
-} */
+}
 
 #add {
-    width: 62px;
+    border-radius: 50%;
+    bottom: 30px;
+    font-size: 30px;
+    font-weight: 500;
     height: 62px;
     position: absolute;
-    bottom: 30px;
     right: 10px;
-    border-radius: 50%;
+    width: 62px;
 }
 
 header {

@@ -2,60 +2,82 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <title>MiniMarket</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<title>MiniMarket</title>
 </head>
 
 <body>
-    <header>
-        <p>Lista de compras</p>
-    </header>
+	<header>
+		<p>Lista de compras</p>
+	</header>
 
-    <section id="empty">
-        <p class="empty__title">Aun no tienes productos </p>
-        <p class="empty__icon">☹</p>
-    </section>
+	<section id="empty">
+		<p class="empty__title">Aun no tienes productos </p>
+		<p class="empty__icon">☹</p>
+	</section>
 
-    <section id="list">
-        <p class="list__title">Lista</p>
-    </section>
+	<section id="list">
+		<p class="list__title">Lista</p>
+	</section>
 
-    <section id="detail">
-        <p>Detalle del producto</p>
-    </section>
+	<section id="detail">
+		<p>Detalle del producto</p>
+	</section>
 
-    <!-- Button trigger modal -->
-    <button id="add" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        +
-    </button>
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-        </div>
-    </div>
+	<button id="add" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#screenLoad">
+		+
+	</button>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-        crossorigin="anonymous"></script>
+
+	<div class="modal fade" id="screenLoad" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Agregar productos</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+
+				<div class="modal-body">
+					<div class="mb-3">
+						<label for="screenLoadProduct" class="form-label">Elegí tus productos</label>
+						<input type="text" class="form-control" id="screenLoadProduct" aria-describedby=" emailHelp"
+							placeholder="Bebidas, carnes, comida y más">
+					</div>
+
+					<div class="mb-3">
+						<label for="screenLoadIcon" class="form-label">Elegí categoría</label>
+						<select id="screenLoadIcon" class="form-select">
+							<option>Varios</option>
+							<option>Carnes</option>
+							<option>Lacteos</option>
+							<option>Bebidas</option>
+							<option>Comestibles</option>
+						</select>
+					</div>
+
+					<div class="mb-3">
+						<label for="screenLoadInfo" class="form-label">Agregá detalles de tu compra</label>
+						<textarea class="form-control" id="screenLoadInfo" rows="3"></textarea>
+					</div>
+				</div>
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn btn-primary">Guardar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+		crossorigin="anonymous"></script>
 </body>
 
 </html>
