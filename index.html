@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
 	<title>MiniMarket</title>
 </head>
 
@@ -22,13 +22,20 @@
 	</section>
 
 	<section id="list">
-		<p class="list__title">Lista</p>
+		<!-- <p class="list__title">Lista</p> -->
+		<ul class="list-group">
+			<li class="list-group-item"><img src="/images/varios.png" class="list__img">Varios</li>
+			<li class="list-group-item"><img src="/images/meat.png" class="list__img">Carnes</li>
+			<li class="list-group-item"><img src="/images/milk.png" class="list__img">Lacteos</li>
+			<li class="list-group-item"><img src="/images/drink.png" class="list__img">Bebidas</li>
+			<li class="list-group-item"><img src="/images/meal.png" class="list__img">Comestibles</li>
+		</ul>
 	</section>
+
 
 	<section id="detail">
 		<p>Detalle del producto</p>
 	</section>
-
 
 	<button id="add" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#screenLoad">
 		+

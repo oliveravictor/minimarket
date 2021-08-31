@@ -1,5 +1,5 @@
-#detail,
-#list {
+#empty,
+#detail {
     display: none;
 }
 
@@ -15,14 +15,19 @@
 }
 
 header {
-    align-items: center;
     background: cornflowerblue;
     display: flex;
     flex-direction: row;
     font-size: 20px;
     font-weight: 600;
     justify-content: center;
+    align-items: center;
     height: 85px;
+}
+
+header p {
+    font-size: 22px;
+    text-transform: uppercase;
 }
 
 #empty {
@@ -42,4 +47,13 @@ header {
 .list__title {
     font-size: 25px;
     font-weight: 600;
+}
+
+.list__img {
+    width: 40px;
+    margin-right: 6px;
+}
+
+li {
+   font-size: 22px;
 }
