@@ -1,5 +1,4 @@
-#list,
-#detail {
+#detail, #list {
     display: none;
 }
 
@@ -51,9 +50,51 @@ header p {
 
 .list__img {
     width: 40px;
-    margin-right: 6px;
+    margin-right: 4px;
 }
 
 li {
    font-size: 22px;
+}
+
+#detail {
+    padding: 10px 25px;
+    text-align: center;
+}
+
+.detail__title {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.detail__description {
+    text-align: center;
+    font-size: 20px;
+}
+
+.detail__img {
+    width: 180px;
+    height: auto;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.list-group-item {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.detail__button {
+    background: cornflowerblue;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    height: 45px;
+    text-transform: uppercase;
+    width: 110px;
 }
