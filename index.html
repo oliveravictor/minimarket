@@ -22,13 +22,7 @@
 	</section>
 
 	<section id="list">
-		<!-- <p class="list__title">Lista</p> -->
-		<ul class="list-group">
-			<li class="list-group-item"><img src="/images/varios.png" class="list__img">Varios</li>
-			<li class="list-group-item"><img src="/images/meat.png" class="list__img">Carnes</li>
-			<li class="list-group-item"><img src="/images/milk.png" class="list__img">Lacteos</li>
-			<li class="list-group-item"><img src="/images/drink.png" class="list__img">Bebidas</li>
-			<li class="list-group-item"><img src="/images/meal.png" class="list__img">Comestibles</li>
+		<ul class="list-group" id="listGroup">
 		</ul>
 	</section>
 
@@ -37,7 +31,7 @@
 		<p>Detalle del producto</p>
 	</section>
 
-	<button id="add" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#screenLoad">
+	<button type="button" class="add btn btn-primary" data-bs-toggle="modal" data-bs-target="#screenLoad">
 		+
 	</button>
 
@@ -60,11 +54,11 @@
 					<div class="mb-3">
 						<label for="screenLoadIcon" class="form-label">Elegí categoría</label>
 						<select id="screenLoadIcon" class="form-select">
-							<option>Varios</option>
-							<option>Carnes</option>
-							<option>Lacteos</option>
-							<option>Bebidas</option>
-							<option>Comestibles</option>
+							<option value="/images/varios.svg">Varios</option>
+							<option value="/images/meat.svg">Carnes</option>
+							<option value="/images/milk.svg">Lacteos</option>
+							<option value="/images/drink.svg">Bebidas</option>
+							<option value="/images/meal.svg">Comestibles</option>
 						</select>
 					</div>
 
@@ -76,7 +70,7 @@
 
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-					<button type="button" class="btn btn-primary">Guardar</button>
+					<button id="screenSave" type="button" class="btn btn-primary">Guardar</button>
 				</div>
 			</div>
 		</div>
@@ -85,6 +79,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
 		crossorigin="anonymous"></script>
+	<script src="main.js"></script>
 </body>
 
 </html>

@@ -1,9 +1,9 @@
-#empty,
+#list,
 #detail {
     display: none;
 }
 
-#add {
+.add {
     border-radius: 50%;
     bottom: 30px;
     font-size: 30px;
